@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
         protected HealthLine[] healthLines = new HealthLine[scount];
         protected List<Bullet> Bullets;
         int pX = 200, pY = 500, pSize = 100, pHp = 100, pDmg = 20; // Player settings
-        int eX = 100, eY = 100, eSize = 100, eHp = 100, eDmg = 25, eSpeed = 3, eDir = 1; // Enemy settings
+        int eX = 100, eY = 100, eSize = 100, eHp = 100, eDmg = 20, eSpeed = 3, eDir = 1; // Enemy settings
         public Form1()
         {
             InitializeComponent();
@@ -98,7 +98,7 @@ namespace WindowsFormsApp1
             enemyHP.Text = Convert.ToString("Enemy HP: " + ecommonhp);
 
 
-            for (int i = 0; i < Bullets.Count; i++)
+            for (int i = 0; i < Bullets.Count; i++)  // БЫЛ ДОБАВЛЕН ЭТОТ ЦИКЛ!!!!!!!!!!!!!!
             {
                 if (Bullets[i].Y < 0 || Bullets[i].Y > 630 || Bullets[i].X == -30) // Bullets Remove
                     Bullets.Remove(Bullets[i]);
@@ -117,11 +117,21 @@ namespace WindowsFormsApp1
                 timer2.Stop();
                 MessageBox.Show("You win");
             }
-            if (ecommonhp == 0 || ships[0].Hp == 0) // if last enemy than bullets go to left side of Form
+            if (ecommonhp == 0 || ships[0].Hp <= 0) // if last enemy than bullets go to left side of Form И БЫЛО ДОБАВЛЕНО ВОТ ЭТО!!!!!!!!!!
             {
                 for (int i = 0; i < Bullets.Count; i++)
                     if (Bullets[i].Y > 0 && Bullets[i].Y < 630)
                         Bullets[i].X = -30;
+            }
+             if(ships[0].Hp <= 0)
+            {
+                for(int i = 0; i < scount; i++)
+                {
+                    if(ships[i] != null)
+                    {
+                        ships[i].X = -50;
+                    }
+                }
             }
 
         }
