@@ -48,3 +48,13 @@ C:\Users\Pephaus\Desktop\хуй\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.cspr
 C:\Users\Pephaus\Desktop\хуй\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Pephaus\Desktop\хуй\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Pephaus\Desktop\хуй\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Pephaus\Desktop\игра\SpaceArcade\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Pephaus\Desktop\игра\SpaceArcade\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Pephaus\Desktop\игра\SpaceArcade\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Pephaus\Desktop\игра\SpaceArcade\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Pephaus\Desktop\игра\SpaceArcade\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Pephaus\Desktop\игра\SpaceArcade\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Resource1.resources
+C:\Users\Pephaus\Desktop\игра\SpaceArcade\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Pephaus\Desktop\игра\SpaceArcade\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Pephaus\Desktop\игра\SpaceArcade\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Pephaus\Desktop\игра\SpaceArcade\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

@@ -11,7 +11,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        const int scount = 8;
+        const int scount = 3;
         public Graphics dc, dc1;
         private Bitmap fon;
         private Bitmap fon1;
@@ -96,18 +96,34 @@ namespace WindowsFormsApp1
 
             playerHP.Text = Convert.ToString("Player HP: " + ships[0].Hp);
             enemyHP.Text = Convert.ToString("Enemy HP: " + ecommonhp);
-            if (ships[0].Hp <= 0)
+
+
+            for (int i = 0; i < Bullets.Count; i++)
+            {
+                if (Bullets[i].Y < 0 || Bullets[i].Y > 630 || Bullets[i].X == -30)
+                    Bullets.Remove(Bullets[i]);
+            }
+
+
+            if (ships[0].Hp <= 0 && Bullets.Count == 0)
             {
                 timer1.Stop();
                 timer2.Stop();
                 MessageBox.Show("You lose");
             }
-            if (ecommonhp == 0)
+            if (ecommonhp == 0 && Bullets.Count == 0)
             {
                 timer1.Stop();
                 timer2.Stop();
                 MessageBox.Show("You win");
             }
+            if (ecommonhp == 0 || ships[0].Hp == 0)
+            {
+                for (int i = 0; i < Bullets.Count; i++)
+                    if (Bullets[i].Y > 0 && Bullets[i].Y < 630)
+                        Bullets[i].X = -30;
+            }
+                
         }
 
         private void playerHP_Click(object sender, EventArgs e)
